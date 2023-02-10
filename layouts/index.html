@@ -87,7 +87,7 @@
   </section>
 
   <section id="essay">
-    <span class="h1"><a href="{{ .Site.Params.secondarySection | absURL }}">{{ .Site.Params.secondarySectionTitle | default "Writings" }}</a></span>
+    <span class="h1"><a href="{{ .Site.Params.secondarySection | absURL }}">{{ .Site.Params.secondarySectionTitle  }}</a></span>
     {{ if (and (and (isset .Site.Params "tagsoverview") (eq .Site.Params.tagsOverview true)) (gt (len .Site.Taxonomies.tags) 0)) }}
     <span class="h2">Topics</span>
     <span class="widget tagcloud">
@@ -135,7 +135,7 @@
   </section>
 
   <section id="poem">
-    <span class="h1"><a href="{{ .Site.Params.tertiarySection | absURL }}">{{ .Site.Params.tertiarySectionTitle | default "Writings" }}</a></span>
+    <span class="h1"><a href="{{ .Site.Params.tertiarySection | absURL }}">{{ .Site.Params.tertiarySectionTitle }}</a></span>
     {{ if (and (and (isset .Site.Params "tagsoverview") (eq .Site.Params.tagsOverview true)) (gt (len .Site.Taxonomies.tags) 0)) }}
     <span class="h2">Topics</span>
     <span class="widget tagcloud">
